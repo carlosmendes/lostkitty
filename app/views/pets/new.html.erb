@@ -1,0 +1,7 @@
+<%= form_for @pet do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_field :address %>
+	<%= f.select :category, Pet::CATEGORIES, prompt: "Categories" %>
+	<%= f.date_field :found_on %>
+	<%= f.submit %>
+<% end %>

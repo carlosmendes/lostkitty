@@ -1,0 +1,19 @@
+<div class="text-center">
+<h1><%= link_to "Have you found a pet? Add it!", new_pet_path %></h1>
+<div class="container">
+	<div class="row">
+		<% @pets.each do |p|%>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="card">
+					<p><%= link_to p.name, pet_path(p) %></p>
+					<p><%= p.address %></p>
+					<p><%= p.category %></p>
+					<p><%= p.found_on %></p>
+					<p><%= link_to "Kill IT!", pet_path(p), method: :delete %></p>
+					<p><%= link_to 'Clone me baby!', clone_path(p) %></p>
+				</div>
+			</div>
+		 <% end %>
+ 	</div>
+</div>
+</div>

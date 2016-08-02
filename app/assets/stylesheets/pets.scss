@@ -1,0 +1,14 @@
+// Place all the styles related to the pets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.card {
+	background-color: cornsilk;
+	padding: 10px;
+	height: 190px;
+	margin: 10px;
+	box-shadow: 0 2px 2px 1px gray;
+}
+
+a:hover {
+	text-decoration: none;
+}
